@@ -3,4 +3,6 @@ type: text/vnd.tiddlywiki
 
 {{$:/snippets/minilanguageswitcher}}
 
-Some readme here.
+{{$:/plugins/linonetwo/itonnote/readme}}
+
+{{$:/plugins/linonetwo/itonnote/description}}
