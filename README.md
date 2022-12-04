@@ -1,10 +1,10 @@
-# Wikitext plugin template for TiddlyWiki5
+# Itonnote plugin for TidGi desktop + TiddlyWiki5
 
 ## 功能
 
 预配置了一系列琐碎的内容，一般来自各插件的Readme和论坛讨论，但大多数人懒得看Readme，故在此直接帮忙配置好了。
 
-具体预置内容介绍可见[[Description|$:/plugins/linonetwo/itonnote/description]]。
+具体预置内容介绍可见[文档站](https://tiddly-gittly.github.io/itonnote-plugin/)。
 
 ## Development
 
