@@ -1,4 +1,4 @@
-module-type: global
+module-type: startup
 title: $:/plugins/linonetwo/itonnote/Startup/closeSidebarOnMobile.js
 type: application/javascript
 creator: NicolasPetton
