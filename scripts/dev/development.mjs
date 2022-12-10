@@ -10,9 +10,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import getPort from 'get-port';
 import { WebSocketServer, WebSocket } from 'ws';
-import { exportPlugins, initTiddlyWiki } from './packup.mjs';
-
-const packageJSON = fs.readJsonSync('package.json');
+import { findAllEntries, buildEntries, exportPlugins, initTiddlyWiki } from './packup.mjs';
 
 // WebSocket with TiddlyWiki on broswer
 const developmentWebListenerScriptPath = path.resolve(path.join(process.cwd(), 'scripts', 'dev', 'devweb-listener.js'));
@@ -64,6 +62,8 @@ const watcher = chokidar.watch('src', {
 });
 const refresh = async () => {
   try {
+    const [entryList, metaMap, _] = await findAllEntries();
+    await buildEntries(entryList, metaMap);
     exportPlugins($tw1, false, false, true);
   } catch (error) {
     console.error(error);
