@@ -1,7 +1,7 @@
 /**
- Copy from $:/themes/nico/notebook-mobile/js/notebookSidebarNav.js
- 
- Closes the  sidebar on mobile when navigating
+Copy from $:/themes/nico/notebook-mobile/js/notebookSidebarNav.js
+
+Closes the  sidebar on mobile when navigating
  */
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -9,7 +9,7 @@ exports.name = 'close-sidebar-on-mobile';
 exports.platforms = ['browser'];
 // modules listed in https://tiddlywiki.com/dev/#StartupMechanism
 // not blocking rendering
-exports.after = ['render'];
+exports.after = ['rootwidget'];
 /* eslint-enable @typescript-eslint/no-unsafe-member-access */
 
 const isOnMobile = () => {
@@ -19,10 +19,8 @@ const isOnMobile = () => {
       // true for mobile device
       return true;
     }
-    const mobileBreakpointWidth = $tw.wiki.getTiddlerText('$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint') ?? '0';
-    // DEBUG: console
-    console.log(`mobileBreakpointWidth`, mobileBreakpointWidth);
-    if (window.innerWidth < Number(mobileBreakpointWidth)) {
+    const mobileBreakpointWidth = $tw.wiki.getTiddler('$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint')?.fields?.text ?? '0px';
+    if (window.innerWidth < Number(mobileBreakpointWidth.replace('px', ''))) {
       return true;
     }
   }
@@ -30,13 +28,11 @@ const isOnMobile = () => {
 };
 
 const closeSidebar = () => {
-  $tw.wiki.setText('$:/state/sidebar', 'text', undefined, 'no');
-  $tw.wiki.setText('$:/state/notebook-sidebar', 'text', undefined, 'no');
+  $tw.wiki.addTiddler({ title: '$:/state/sidebar', text: 'no' });
+  $tw.wiki.addTiddler({ title: '$:/state/notebook-sidebar', text: 'no' });
 };
 
 const closeSidebarOnMobile = () => {
-  // DEBUG: console
-  console.log(`isOnMobile()`, isOnMobile());
   if (isOnMobile()) {
     closeSidebar();
   }
