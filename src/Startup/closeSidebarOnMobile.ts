@@ -32,17 +32,16 @@ const closeSidebar = () => {
   $tw.wiki.addTiddler({ title: '$:/state/notebook-sidebar', text: 'no' });
 };
 
-const closeSidebarOnMobile = () => {
+const closeSidebarOnMobile = (event?: unknown) => {
   if (isOnMobile()) {
     closeSidebar();
   }
+  return event;
 };
 
 const setup = () => {
-  $tw.hooks.addHook('th-navigating', function (event) {
-    closeSidebarOnMobile();
-    return event;
-  });
+  $tw.hooks.addHook('th-navigating', closeSidebarOnMobile);
+  $tw.hooks.addHook('th-new-tiddler', closeSidebarOnMobile);
   closeSidebarOnMobile();
 };
 
