@@ -10,7 +10,7 @@ Title of the notes as the root folder in the file tree
 
 Other notes with this title as a tag are equivalent to being placed in the root folder:
 
-虚拟根文件夹：
+虚拟根目录：
 <$edit-text
 	tiddler="$:/plugins/linonetwo/itonnote/Configs/SideBarFolderMenuBaseTitle"
 	tag="input"
