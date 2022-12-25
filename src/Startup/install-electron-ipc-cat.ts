@@ -6,7 +6,4 @@ exports.platforms = ['browser'];
 exports.after = ['rootWidget'];
 /* eslint-enable @typescript-eslint/no-unsafe-member-access */
 
-// @ts-expect-error Property 'service' does not exist on type 'Window & typeof globalThis'.ts(2339)
-if (typeof window !== 'undefined' && window.service !== undefined) {
-  require('./electron-ipc-cat');
-}
+exports.startup = () => require('./electron-ipc-cat');

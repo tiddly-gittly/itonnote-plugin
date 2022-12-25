@@ -42,7 +42,12 @@ const closeSidebarOnMobile = (event?: unknown) => {
 const setup = () => {
   $tw.hooks.addHook('th-navigating', closeSidebarOnMobile);
   $tw.hooks.addHook('th-new-tiddler', closeSidebarOnMobile);
+  const previousOpenCommandPaletteListener = $tw.rootWidget.eventListeners['open-command-palette'];
+  $tw.rootWidget.addEventListener('open-command-palette', (e) => {
+    previousOpenCommandPaletteListener?.(e);
+    closeSidebarOnMobile();
+  });
   closeSidebarOnMobile();
 };
 
-setup();
+exports.startup = setup;
