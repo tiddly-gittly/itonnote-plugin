@@ -1,0 +1,9 @@
+title: $:/plugins/linonetwo/itonnote/UI/PageControlBelowPage
+tags: $:/tags/AboveStory
+
+<!-- Though visually it is on the bottom of the page, but we have to use AboveStory to make sure it is overlay on the story. -->
+<$list filter="[[$:/plugins/linonetwo/itonnote/settings/PageControlBelowPage]get[text]else[no]match[yes]]">
+  <nav class="page-control-below-page">
+    {{$:/core/ui/PageTemplate/pagecontrols}}
+  </nav>
+</$list>

@@ -1,0 +1,33 @@
+title: $:/plugins/linonetwo/itonnote/UI/style.css
+tags: $:/tags/Stylesheet
+type: text/vnd.tiddlywiki
+
+<$importvariables filter="[[$:/themes/tiddlywiki/vanilla/base]]">
+
+.page-control-below-page {
+  display: none;
+
+  padding: 10px;
+  background-color: white;
+  -webkit-backdrop-filter: blur(10px);
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+.page-control-below-page .tc-page-controls {
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: <<sidebarbreakpoint>>) {
+  .page-control-below-page {
+    display: block;
+  }
+}

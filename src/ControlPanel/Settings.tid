@@ -1,0 +1,12 @@
+title: $:/plugins/linonetwo/itonnote/ControlPanel/Settings
+caption: ItonNote
+tags: $:/tags/ControlPanel/SettingsTab
+
+These settings let you customise the behaviour of ItonNote plugin.
+
+---
+
+!! Appearance
+
+;Show page control buttons below page on mobile:
+:<$checkbox tiddler="$:/plugins/linonetwo/itonnote/settings/PageControlBelowPage" field="text" checked="yes" unchecked="no"> On mobile sidebar is folded, so adding page control to bottom will be convenient shortcut.</$checkbox>
