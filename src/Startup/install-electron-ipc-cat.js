@@ -3,13 +3,9 @@
 exports.name = 'install-electron-ipc-cat';
 exports.platforms = ['browser'];
 exports.after = ['startup'];
-exports.synchronous = false;
-exports.startup = () => {
-  try {
-    if ('service' in window && window.service?.descriptors !== undefined) {
-      require('$:/plugins/linonetwo/itonnote/Startup/electron-ipc-cat.js');
-    }
-  } catch (error) {
-    console.error('Error when itonnote-plugin install-electron-ipc-cat:', error);
+exports.synchronous = true;
+exports.startup = function () {
+  if ('service' in window && 'descriptors' in window.service && window.service.descriptors !== undefined) {
+    require('$:/plugins/linonetwo/itonnote/Startup/electron-ipc-cat.js');
   }
 };
