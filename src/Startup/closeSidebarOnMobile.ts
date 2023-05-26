@@ -13,18 +13,7 @@ exports.after = ['rootwidget'];
 /* eslint-enable @typescript-eslint/no-unsafe-member-access */
 
 const isOnMobile = () => {
-  // TODO: use https://github.com/Jermolene/TiddlyWiki5/pull/6675 after next release
-  if (typeof navigator !== 'undefined') {
-    if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent)) {
-      // true for mobile device
-      return true;
-    }
-    const mobileBreakpointWidth = $tw.wiki.getTiddler('$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint')?.fields?.text ?? '0px';
-    if (window.innerWidth < Number(mobileBreakpointWidth.replace('px', ''))) {
-      return true;
-    }
-  }
-  return false;
+  return $tw.wiki.getTiddlerText('$:/info/browser/is/mobile') === 'yes';
 };
 
 const closeSidebar = () => {

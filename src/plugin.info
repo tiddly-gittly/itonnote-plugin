@@ -8,6 +8,7 @@
   "version": "1.0.10",
   "list": "readme description ControlPanel",
   "dependents": [
-    "$:/plugins/bimlas/locator"
+    "$:/plugins/bimlas/locator",
+    "$:/plugins/tiddlywiki/browser-sniff"
   ]
 }
