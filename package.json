@@ -1,8 +1,7 @@
 {
   "url": "https://github.com/tiddly-gittly/itonnote-plugin",
   "tsFiles": [
-    "src/Startup/closeSidebarOnMobile.ts",
-    "src/Startup/electron-ipc-cat.ts"
+    "src/Startup/closeSidebarOnMobile.ts"
   ],
   "ignoredExtensionsWhenBuildPlugin": [
     ".ts",
