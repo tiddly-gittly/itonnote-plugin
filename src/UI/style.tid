@@ -14,7 +14,7 @@ type: text/vnd.tiddlywiki
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 200;
   width: 100%;
 }
 .page-control-below-page .tc-page-controls {
