@@ -30,6 +30,7 @@ const closeSidebarOnMobile = (event?: unknown) => {
 
 const setup = () => {
   $tw.hooks.addHook('th-opening-default-tiddlers-list', closeSidebarOnMobile);
+  $tw.hooks.addHook('th-importing-file', closeSidebarOnMobile);
   $tw.hooks.addHook('th-navigating', closeSidebarOnMobile);
   $tw.hooks.addHook('th-new-tiddler', closeSidebarOnMobile);
   $tw.hooks.addHook('th-open-command-palette', closeSidebarOnMobile);
