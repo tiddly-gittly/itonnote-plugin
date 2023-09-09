@@ -13,7 +13,7 @@ exports.after = ['rootwidget'];
 /* eslint-enable @typescript-eslint/no-unsafe-member-access */
 
 const isOnMobile = () => {
-  return $tw.wiki.getTiddlerText('$:/info/browser/is/mobile') === 'yes';
+  return $tw.wiki.getTiddlerText('$:/info/browser/is/mobile') === 'yes' || $tw.wiki.getTiddlerText('$:/info/tidgi-mobile') === 'yes';
 };
 
 const closeSidebar = () => {
