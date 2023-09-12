@@ -8,13 +8,22 @@ type: text/vnd.tiddlywiki
 
 <$scrollable fallthrough="none" class="tc-popup-keep tc-menubar-dropdown-sidebar">
 
-<$reveal type="nomatch" state="$:/temp/focussedTiddler" text={{$:/plugins/linonetwo/itonnote/Configs/SideBarFolderMenuBaseTitle}}>
-<$macrocall $name="locator-view" baseTitle={{$:/temp/focussedTiddler}} />
-</$reveal>
+	<$let toc-open-icon="$:/core/images/fold-button" toc-closed-icon="$:/core/images/folder">
+		<div class="tc-table-of-contents">
+			<$transclude $variable="toc-selective-expandable" tag={{$:/plugins/linonetwo/itonnote/Configs/SideBarFolderMenuBaseTitle}} />
+		</div>
+	</$let>
 
-<br>
+  <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
 
-<$macrocall $name="locator-view" baseTitle={{$:/plugins/linonetwo/itonnote/Configs/SideBarFolderMenuBaseTitle}} />
+    <$list filter="[<lang>search[zh]]">
+      [[使用帮助|$:/plugins/linonetwo/itonnote/Help/Index]]
+    </$list>
 
-[[使用帮助|$:/plugins/linonetwo/itonnote/Help/TW-Locator基于标签生成的文件夹目录结构使用方法]]
+    <$list filter="[<lang>!search[zh]]">
+      [[Help|$:/plugins/linonetwo/itonnote/Help/Index]]
+    </$list>
+
+  </$list>
+
 </$scrollable>

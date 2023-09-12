@@ -1,14 +1,6 @@
 title: $:/plugins/linonetwo/itonnote/description
 type: text/vnd.tiddlywiki
 
-!!! TW-Locator
-
-根据[[$:/plugins/bimlas/locator/README/macros]]创建了下列文件：
-
-* [[$:/plugins/linonetwo/itonnote/Sidebar/Locator Fields]] 侧边栏的 Fields 标签页，用于查看含有各种字段的Tiddlers
-* [[$:/plugins/linonetwo/itonnote/Sidebar/SearchResultByFacets]] 搜索结果中的 Facets 标签页，用于分面搜索
-* [[$:/plugins/linonetwo/itonnote/Sidebar/SearchResultByFields]] 搜索结果中的 Fields 标签页，用于按字段进行精准搜索
-
 !!! macros
 
 !!!! TransclusionWithEditMe
@@ -41,6 +33,6 @@ If you have `webcatalog-tiddlywiki-menu-app.jpg` in your Wiki, you normally can 
 
 本插件预置了一些文本片段，详见相应的 Macros 的介绍，或相应的插件的介绍：
 
-* [[$:/plugins/linonetwo/itonnote/Snippets/LocatorAboutCurrentTiddler]]
+* [[$:/plugins/linonetwo/itonnote/Snippets/TOCAboutCurrentTiddler]]
 * [[$:/plugins/linonetwo/itonnote/Snippets/OpenImageInGithub]]
 * [[$:/plugins/linonetwo/itonnote/Snippets/TransclusionWithEditMe]]

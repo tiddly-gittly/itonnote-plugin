@@ -1,0 +1,11 @@
+caption: 添加一个使用当前标题的 toc
+tags: [[$:/plugins/linonetwo/itonnote/Help/Index]] $:/tags/TextEditor/Snippet
+title: $:/plugins/linonetwo/itonnote/Snippets/TOCAboutCurrentTiddler
+type: text/vnd.tiddlywiki
+
+
+<$let toc-open-icon="$:/core/images/fold-button" toc-closed-icon="$:/core/images/folder">
+  <div class="tc-table-of-contents">
+    <$transclude $variable="toc-selective-expandable" tag=<<currentTiddler>> />
+  </div>
+</$let>

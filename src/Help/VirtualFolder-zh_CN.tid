@@ -1,0 +1,22 @@
+title: $:/plugins/linonetwo/itonnote/Help/VirtualFolder-zh_CN
+tags: $:/plugins/linonetwo/itonnote/Help/Index
+
+!!! 标签
+
+标签结构可以看作是一种文件夹目录结构，通过软链接形成图论结构，因为标签关系本身是自由的，两个笔记可以相互加对方为标签，并在文件夹结构中互为父级，形成任意自由的结构。
+
+使用官方的 toc 宏，你可以在侧边栏创建一个「文件目录」标签，显示标签生成的文件夹结构。详细内容写在 [[官方文档的 Table-of-Contents 一文里|https://tw-cn-doc.cpolar.top/#Table-of-Contents%20Macros:%5B%5BTable-of-Contents%20Macros%5D%5D%20%5B%5BTable-of-Contents%20Macros%20(Examples)%5D%5D]] 中，插件应在 [[$:/plugins/linonetwo/itonnote/Sidebar/FolderMenu]] 中预置了，可以立即使用，你也可以修改覆盖。
+
+然后，您可以在 `$:/ControlPanel` ->「Settings」 ->「Default Sidebar Tab」中设置默认显示「文件目录」选项卡，这样您就可以将 TiddlyWiki 用作文件夹系统。插件应该已经为此进行了预配置。
+
+!!! 斜杠
+
+TiddlyWiki 提供了一种在标题里使用斜杠创建文件夹的方法。
+
+你可以通过侧边栏的「更多」->「探索」查看系统自带的各种文件夹。
+
+如果你使用的是 NodeJS 版本的 TiddlyWiki，这些 tiddlers 也会被放置在真实文件系统的相应文件夹中。
+
+!!! 使用哪种？
+
+这是个见仁见智的问题，请[[参考中文教程学习|https://tw-cn.netlify.app/#%E4%BD%BF%E7%94%A8%E6%A0%87%E7%AD%BE%E5%BD%93%E6%96%87%E4%BB%B6%E5%A4%B9:%E4%BD%BF%E7%94%A8%E6%A0%87%E7%AD%BE%E5%BD%93%E6%96%87%E4%BB%B6%E5%A4%B9%20%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%A4%AA%E5%BE%AE%EF%BC%81]]，也可以加群讨论！
