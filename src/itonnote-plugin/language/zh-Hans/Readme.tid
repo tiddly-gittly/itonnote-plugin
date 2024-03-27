@@ -1,7 +1,26 @@
-title: $:/plugins/linonetwo/itonnote/description
-type: text/vnd.tiddlywiki
+title: $:/plugins/linonetwo/itonnote/language/zh-Hans/Readme
 
-!!! macros
+\procedure lingo-base() $:/plugins/linonetwo/itonnote/language/
+
+! <<lingo Name>>
+
+<<lingo Description>>
+
+!! 功能
+
+本插件的一些预置内容。
+
+!!! snippets（文本片段）
+
+在编辑模式下，有一个图章按钮，点击后会列出一系列文本片段，可以一键添加预制内容，因而无需用脑记住这些复杂的文本片段了。
+
+本插件预置了一些文本片段，详见相应的 Macros 的介绍，或相应的插件的介绍：
+
+* [[$:/plugins/linonetwo/itonnote/Snippets/TOCAboutCurrentTiddler]]
+* [[$:/plugins/linonetwo/itonnote/Snippets/OpenImageInGithub]]
+* [[$:/plugins/linonetwo/itonnote/Snippets/TransclusionWithEditMe]]
+
+!!! 宏
 
 !!!! TransclusionWithEditMe
 
@@ -21,18 +40,9 @@ type: text/vnd.tiddlywiki
 
 [[$:/plugins/linonetwo/itonnote/Macros/OpenImageInGithub]] Usage:
 
+如果您的 Wiki 中有 "webcatalog-tiddlywiki-menu-app.jpg"，您通常可以直接使用"{{webcatalog-tiddlywiki-menu-app.jpg}}"将其放到条目中，但您可以使用此宏使其可点击，并在新的浏览器标签页中打开大图：
 If you have `webcatalog-tiddlywiki-menu-app.jpg` in your Wiki, you normally can just `{{webcatalog-tiddlywiki-menu-app.jpg}}` to place it in your tiddler, but you can use this macro to make it clickable, and open large image in the new browser tab:
 
 ```tid
 <<view-big-image webcatalog-tiddlywiki-menu-app.jpg>>
 ```
-
-!!! snippets（文本片段）
-
-在编辑模式下，有一个图章按钮，点击后会列出一系列文本片段，可以一键添加预制内容，因而无需用脑记住这些复杂的文本片段了。
-
-本插件预置了一些文本片段，详见相应的 Macros 的介绍，或相应的插件的介绍：
-
-* [[$:/plugins/linonetwo/itonnote/Snippets/TOCAboutCurrentTiddler]]
-* [[$:/plugins/linonetwo/itonnote/Snippets/OpenImageInGithub]]
-* [[$:/plugins/linonetwo/itonnote/Snippets/TransclusionWithEditMe]]

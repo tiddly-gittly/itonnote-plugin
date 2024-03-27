@@ -1,7 +1,6 @@
-title: $:/plugins/linonetwo/itonnote/Help/FolderMenu-zh-CN
-tags: $:/plugins/linonetwo/itonnote/Help/Index
+title: $:/plugins/linonetwo/itonnote/language/zh-Hans/FolderMenu
 
-侧边栏的「目录结构」标签页里展示了[[通过标签系统自动生成|$:/plugins/linonetwo/itonnote/Help/VirtualFolder-zh_CN]]的文件夹。
+侧边栏的「目录结构」标签页里展示了[[通过标签系统自动生成|$:/plugins/linonetwo/itonnote/language/zh-Hans/VirtualFolder]]的文件夹。
 
 第一个目录树根据`当前所在的条目`展示，是动态的；第二个目录树从`Index(根文件夹)`条目出发，是静态的。因Echart动态显示上下文的图没有这种树的形式好看且干扰注意力。所以暂用目录树的形式显示上下文。
 

@@ -2,7 +2,3 @@ title: Index
 type: text/vnd.tiddlywiki
 
 {{$:/snippets/minilanguageswitcher}}
-
-{{$:/plugins/linonetwo/itonnote/readme}}
-
-{{$:/plugins/linonetwo/itonnote/description}}

@@ -1,0 +1,47 @@
+title: $:/plugins/linonetwo/itonnote/language/en-GB/Readme
+
+\procedure lingo-base() $:/plugins/linonetwo/itonnote/language/
+
+! <<lingo Name>>
+
+<<lingo Description>>
+
+!! Features
+
+Some preset content for this plugin.
+
+!!! snippets (text snippets)
+
+In edit mode, there is a stamp button that lists a series of text snippets that can be added with one click, thus eliminating the need to memorize these complex text snippets.
+
+This plugin comes with a number of text snippets pre-built, see the introduction of the corresponding Macros for details, or the introduction of the corresponding plugin:
+
+* [[$:/plugins/linonetwo/itonnote/Snippets/TOCAboutCurrentTiddler]]
+* [[$:/plugins/linonetwo/itonnote/Snippets/OpenImageInGithub]]
+* [[$:/plugins/linonetwo/itonnote/Snippets/TransclusionWithEditMe]]
+
+!!! macros
+
+!!!! TransclusionWithEditMe
+
+[[$:/plugins/linonetwo/itonnote/Macros/TransclusionWithEditMe]] Usage:
+
+使用普通的 [[Transclusion|https://tiddlywiki.com/#Transclusion]] 时，你没法得知源文件在哪里，如果想要修改内容，还得打开编辑模式、复制被引用的 Tiddler 的标题，然后搜索打开编辑，比较麻烦。
+
+使用此宏进行引用就很方便了：
+
+```tid
+<<reuse-tiddler "快速创建新笔记按钮">>
+```
+
+会直接在引用的区块旁边显示一个「查看引文」的小浮窗，带有指向源文件的链接，直接点开编辑即可。
+
+!!!! OpenImageInGithub
+
+[[$:/plugins/linonetwo/itonnote/Macros/OpenImageInGithub]] Usage:
+
+If you have `webcatalog-tiddlywiki-menu-app.jpg` in your Wiki, you normally can just `{{webcatalog-tiddlywiki-menu-app.jpg}}` to place it in your tiddler, but you can use this macro to make it clickable, and open large image in the new browser tab:
+
+```tid
+<<view-big-image webcatalog-tiddlywiki-menu-app.jpg>>
+```

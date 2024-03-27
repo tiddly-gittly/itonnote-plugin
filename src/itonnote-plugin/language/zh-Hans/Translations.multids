@@ -1,0 +1,12 @@
+title: $:/plugins/linonetwo/itonnote/language/zh-Hans/
+
+Name: 太记预置
+Description: 为太记预配置了一系列琐碎的内容，一般来自各插件的自述文件和论坛讨论，但大多数人懒得看自述文件，故在此直接帮忙配置好了。
+PluginConfigs: 插件设置
+Config/Description: 通过这些设置，您可以自定义「太记预置」插件的行为。
+Config/Appearance: 外观
+Config/PageControlMobile/Caption: 在手机页面下方显示页面控制按钮
+Config/PageControlMobile/Description: 在移动设备上，侧边栏是折叠的，因此在底部添加页面控制将是一个方便的快捷方式。
+Config/FolderMenu/Caption: 文件目录
+Config/FolderMenu/Description: 其它笔记加上这个标签，相当于这个标签是根目录文件夹，其它笔记放入了这个文件夹中。并显示在侧边栏的「文件目录」标签页里。
+FolderMenu/Help: [[使用帮助|$:/plugins/linonetwo/itonnote/language/zh-Hans/FolderMenu]]

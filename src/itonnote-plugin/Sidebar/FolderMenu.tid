@@ -1,10 +1,11 @@
-caption: 文件目录
-creator: LinOnetwo
-description: 文件夹系统目录结构
-is-dropdown: yes
-tags: $:/tags/SideBar $:/tags/MenuBar
 title: $:/plugins/linonetwo/itonnote/Sidebar/FolderMenu
+tags: $:/tags/SideBar $:/tags/MenuBar
+caption: <<lingo Config/FolderMenu/Caption $:/plugins/linonetwo/itonnote/language/>>
+description: <<lingo Config/FolderMenu/Description $:/plugins/linonetwo/itonnote/language/>>
+is-dropdown: yes
 type: text/vnd.tiddlywiki
+
+\procedure lingo-base() $:/plugins/linonetwo/itonnote/language/
 
 <$scrollable fallthrough="none" class="tc-popup-keep tc-menubar-dropdown-sidebar">
 
@@ -14,16 +15,6 @@ type: text/vnd.tiddlywiki
 		</div>
 	</$let>
 
-  <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
-
-    <$list filter="[<lang>search[zh]]">
-      [[使用帮助|$:/plugins/linonetwo/itonnote/Help/Index]]
-    </$list>
-
-    <$list filter="[<lang>!search[zh]]">
-      [[Help|$:/plugins/linonetwo/itonnote/Help/Index]]
-    </$list>
-
-  </$list>
+  <<lingo FolderMenu/Help>>
 
 </$scrollable>

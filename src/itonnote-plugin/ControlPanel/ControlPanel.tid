@@ -1,0 +1,53 @@
+title: $:/plugins/linonetwo/itonnote/ControlPanel
+type: text/vnd.tiddlywiki
+tags: $:/tags/ControlPanel/SettingsTab
+caption: <<lingo Name $:/plugins/linonetwo/itonnote/language/>>
+
+\procedure lingo-base() $:/plugins/linonetwo/itonnote/language/
+
+\define single-text-tag-editor(config-name)
+\whitespace trim
+<!-- copy and modify from $:/plugins/linonetwo/intention-tower-knowledge-graph/configs/Tags -->
+<div>
+  <$let
+    currentTiddler=<<config-title $config-name$>>
+    palette={{$:/palette}}
+    tempTitle="$:/state/plugins/linonetwo/itonnote/Configs/$config-name$"
+    tabIndex={{$:/config/EditTabIndex}}
+    cancelPopups="yes"
+  >
+    <% if [{$:/plugins/linonetwo/itonnote/Configs/$config-name$}!match[]] %>
+      <$macrocall $name="tag" tag={{$:/plugins/linonetwo/itonnote/Configs/$config-name$}} />
+    <% endif %>
+
+    <$edit-text tiddler=<<tempTitle>> tag="input" field="text" placeholder={{$:/language/EditTemplate/Tags/Add/Placeholder}} />
+
+    <$button>
+      <<completeInit>>
+      <$action-setfield tiddler=<<currentTiddler>> text={{{ [<tempTitle>get[text]] }}}>
+        <$action-setfield tiddler=<<tempTitle>> text="" />
+      </$action-setfield>
+
+      {{$:/language/EditTemplate/Tags/Add/Button}}
+    </$button>
+    
+  </$let> 
+</div>
+\end
+
+<<lingo Config/Description>>
+
+---
+
+!! <<lingo PluginConfigs>>
+
+!!! <<lingo Config/Appearance>>
+
+;<<lingo Config/PageControlMobile/Caption>>
+:<$checkbox tiddler="$:/plugins/linonetwo/itonnote/Configs/PageControlBelowPage" field="text" checked="yes" unchecked="no"> <<lingo Config/PageControlMobile/Description>></$checkbox>
+
+!!! <<lingo Config/FolderMenu/Caption>>
+
+<<single-text-tag-editor SideBarFolderMenuBaseTitle>>
+
+<<lingo Config/FolderMenu/Description>>

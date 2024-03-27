@@ -1,0 +1,12 @@
+title: $:/plugins/linonetwo/itonnote/language/en-GB/
+
+Name: TidGi Preset
+Description: A series of trivial content for TidGi Preset, usually from the plugin's description file and forum discussions, but most people are too lazy to read the description file, so here is a direct help to configure it.
+PluginConfigs: plugin settings
+Config/Description: With these settings, you can customize the behavior of the "TidGi Preset" plugin.
+Config/Appearance: Appearance
+Config/PageControlMobile/Caption: Show page control buttons at the bottom of the mobile page.
+Config/PageControlMobile/Description: On mobile devices, the sidebar is collapsed, so adding page controls at the bottom would be a convenient shortcut.
+Config/FolderMenu/Caption: Folder Menu
+Config/FolderMenu/Description: Other tiddlers are added to this tag, which is equivalent to this tag being the root folder into which other tiddlers are placed. And it is displayed in the "File Menu" tab on the sidebar.
+FolderMenu/Help: [[Help|$:/plugins/linonetwo/itonnote/language/en-GB/FolderMenu]]
