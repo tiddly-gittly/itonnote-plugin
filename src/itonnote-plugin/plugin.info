@@ -8,6 +8,7 @@
   "version": "3.0.0",
   "list": "readme ControlPanel tree",
   "dependents": [
-    "$:/plugins/tiddlywiki/browser-sniff"
+    "$:/plugins/tiddlywiki/browser-sniff",
+    "$:/plugins/kookma/toc"
   ]
 }

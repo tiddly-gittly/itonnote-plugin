@@ -5,13 +5,14 @@ description: <<lingo Config/FolderMenu/Description $:/plugins/linonetwo/itonnote
 is-dropdown: yes
 type: text/vnd.tiddlywiki
 
+\import [all[tiddlers+shadows]tag[$:/tags/Macro/Toc]]
 \procedure lingo-base() $:/plugins/linonetwo/itonnote/language/
 
 <$scrollable fallthrough="none" class="tc-popup-keep tc-menubar-dropdown-sidebar">
 
 	<$let toc-open-icon="$:/core/images/fold-button" toc-closed-icon="$:/core/images/folder">
 		<div class="tc-table-of-contents">
-			<$transclude $variable="toc-selective-expandable" tag={{$:/plugins/linonetwo/itonnote/Configs/SideBarFolderMenuBaseTitle}} />
+			<$transclude $variable="toc-ui" tag={{$:/plugins/linonetwo/itonnote/Configs/SideBarFolderMenuBaseTitle}} />
 		</div>
 	</$let>
 

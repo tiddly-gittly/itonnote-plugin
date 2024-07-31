@@ -8,5 +8,8 @@ If you want to modify the root folder, please open the [[Settings|$:/plugins/lin
 
 * tagged with A, which is equivalent to storing the file in folder A and using the contents of A as the Readme of the folder
 * Use the "Create a new tiddler with this tag name" button in any Tiddler to create a file with the current Tiddler as the folder
-* Click the {{$:/core/images/folder}} button (to make it {{$:/core/images/fold-button}}) to expand the folder
+* Click the {{$:/core/images/down-arrow}} button (to make it {{$:/core/images/fold-button}}) to expand the folder
 * Click directly on the name of a folder to see the Readme of that folder
+* Click {{$:/core/images/options-button}} button to open more buttons, you can see {{$:/core/images/edit-button}} button, click it to open edit mode.
+** In edit mode, hover over the folder and the {{$:/core/images/down-arrow}} button will appear on the far right, click on it to see a series of new action buttons, which can be used to create new entries in the folder.
+** You can also drag the folder to sort it.
