@@ -2,6 +2,7 @@ title: $:/plugins/linonetwo/itonnote/ViewTemplate/LazyLoadingIndicatorBody
 
 \rules except dash
 
+<!-- // TODO: remove after https://github.com/TiddlyWiki/TiddlyWiki5/pull/8505 merged -->
 <!-- Render the text to trigger lazy-loading -->
 {{||$:/core/ui/ViewTemplate/body/default}}
 <div class="skinny-tiddler-loading-indicator" />
