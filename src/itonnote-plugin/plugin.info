@@ -5,7 +5,7 @@
   "author": "LinOnetwo",
   "core-version": ">=5.3.0",
   "plugin-type": "plugin",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "list": "readme ControlPanel tree",
   "dependents": [
     "$:/plugins/tiddlywiki/browser-sniff",
