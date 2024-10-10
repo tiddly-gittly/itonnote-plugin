@@ -33,8 +33,8 @@
     ]
   },
   "devDependencies": {
-    "@modern-js/tsconfig": "^2.60.1",
-    "@types/node": "^22.5.5",
+    "@modern-js/tsconfig": "^2.60.2",
+    "@types/node": "^22.7.5",
     "dprint": "^0.47.2",
     "eslint-config-tidgi": "1.2.3",
     "husky": "^9.1.6",
@@ -43,7 +43,7 @@
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "tw5-typed": "^0.5.12",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   },
   "dependencies": {
     "npm-check-updates": "^17.1.3",
