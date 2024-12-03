@@ -5,9 +5,10 @@
   "author": "LinOnetwo",
   "core-version": ">=5.3.0",
   "plugin-type": "plugin",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "stability": "STABILITY_2_STABLE",
   "list": "readme ControlPanel tree",
+  "plugin-priority": 100,
   "dependents": [
     "$:/plugins/tiddlywiki/browser-sniff",
     "$:/plugins/kookma/toc"
