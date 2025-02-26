@@ -8,7 +8,6 @@
   "version": "3.4.4",
   "stability": "STABILITY_2_STABLE",
   "list": "readme ControlPanel tree",
-  "plugin-priority": 1,
   "dependents": [
     "$:/plugins/tiddlywiki/browser-sniff",
     "$:/plugins/kookma/toc"
